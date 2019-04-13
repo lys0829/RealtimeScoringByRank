@@ -1,0 +1,59 @@
+{
+    "_section": "AsyncLibrary",
+
+    "core_services":
+    {
+        "LogService":        [["192.168.7.229", 29000]],
+        "ResourceService":   [["192.168.7.229", 28000],
+                              ["192.168.7.242", 28000]],
+        "ScoringService":    [["192.168.7.229", 28500]],
+        "Checker":           [["192.168.7.229", 22000]],
+        "EvaluationService": [["192.168.7.229", 25000]],
+        "Worker":            [["192.168.7.229", 26000],
+                              ["192.168.7.229", 26001],
+                              ["192.168.7.242", 26002],
+                              ["192.168.7.242", 26003],
+                              ["192.168.7.242", 26004],
+                              ["192.168.7.242", 26005],
+                              ["192.168.7.242", 26006],
+                              ["192.168.7.242", 26007],
+                              ["192.168.7.242", 26008],
+                              ["192.168.7.242", 26009],
+                              ["192.168.7.242", 26010],
+                              ["192.168.7.242", 26011],
+                              ["192.168.7.242", 26012],
+                              ["192.168.7.242", 26013],
+                              ["192.168.7.242", 26014],
+                              ["192.168.7.242", 26015]],
+        "ContestWebServer":  [["192.168.7.229", 21000],["192.168.7.229", 21001]],
+        "AdminWebServer":    [["192.168.7.229", 21100]],
+        "ProxyService":      [["192.168.7.229", 28600]],
+        "PrintingService":   [["192.168.7.229", 25123]]
+        },
+
+    "other_services":
+    {
+        "TestFileCacher":    [["192.168.7.229", 27501]]
+    },
+    
+    "RWSurl": "http://192.168.7.229:8890/",
+    "RWSuser": "usern4me",
+    "RWSpass": "passw0rd",
+    "start": "2019-02-19 13:35:00",
+    "end": "2019-02-19 17:05:00",
+    "skipwaituntil": "2019-02-19 17:05:00",
+    "_help": "interval with minute",
+    "interval": 5,
+
+    "_help": "taskname is whitch name will be show on the RWS",
+    "_help": "MinSubID is the min submission id use in RWS, it should bigger than all normal submission id",
+    "taskname": "Extra",
+    "MinSubID": 10000,
+
+    "_help": "score setting",
+    "_help": "[rank0_score,rank1_score,rank2_score,rank3_score,...]",
+    "scoreset": [2,1,0.7,0.5,0.4],
+    "score_precision": 1,
+    "_help": "just use to make color",
+    "maxscore": 100.0
+}
